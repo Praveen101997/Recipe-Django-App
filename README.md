@@ -47,3 +47,31 @@ docker-compose up
 ```
 
 The API will then be available at http://127.0.0.1:8000
+
+### Extra Command
+
+```
+Test Code 
+docker-compose run app sh -c "python manage.py test && flake8
+
+Create SuperUser
+docker-compose run app sh -c "python manage.py createsuperuser"
+
+Create a User
+http://localhost:8000/api/user/create/
+
+Token Generate
+http://localhost:8000/api/user/token/
+
+Home Recipe
+http://localhost:8000/api/recipe/
+
+Create Recipe
+http://localhost:8000/api/recipe/recipes/
+
+Upload Image to Recipe
+http://localhost:8000/api/recipe/recipes/1/upload-image/
+
+Extract By Ingredients
+http://localhost:8000/api/recipe/recipes/?ingredients=2
+```
